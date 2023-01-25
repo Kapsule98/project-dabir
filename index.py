@@ -127,6 +127,7 @@ def doJob():
       handle_email(prev_entry,new_entry)
 
     del new_entry["_id"]
+    print(new_entry)
     return new_entry,200
   except Exception as e:
     print(e)
