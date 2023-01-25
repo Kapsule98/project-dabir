@@ -105,6 +105,8 @@ def insertEntry(seq,stock_list):
     "url":screener_url
   }
   table.insert_one(obj)
+  print("mongodb insert ")
+  print(obj)
   return obj
 
 def doJob():
